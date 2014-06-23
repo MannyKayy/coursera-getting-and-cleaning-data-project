@@ -52,7 +52,7 @@ names(new.y) <- "activity"
 names(sub.data) <- "subject"
 
 ## Create tidy data set.
-merged.clean <- cbind(sub.data,new.x,new.y)
+merged.clean <- cbind(sub.data,new.y,new.x)
 write.table(merged.clean, "clean_dataset.txt")
 
 ## Averaged clean data set.
