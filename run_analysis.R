@@ -45,10 +45,10 @@ names(new.x) <- tolower(names(new.x))                                    # Editi
 activity[, 2] = gsub("_", "", tolower(as.character(activity[, 2])))      # Editing Text Variables Lecture (week 4)
 new.y <- y.data
 new.y[,1] = activity[new.y[,1], 2]
-names(new.y) <- "activity"
+
 
 ## Appropriately labels the data set with descriptive variable names.
-
+names(new.y) <- "activity"
 names(sub.data) <- "subject"
 
 ## Create tidy data set.
