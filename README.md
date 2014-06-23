@@ -39,4 +39,4 @@ The `CodeBook.md` file details the behaviour of the `run_analysis.R` script and 
 
 
 
-**NOTE** You will need to choose and/or set your working directory as shown on line 3 in the `run_analysis.R` file.
+**NOTE :** You will need to choose and/or set your working directory as shown on line 3 in the `run_analysis.R` file.
