@@ -42,6 +42,12 @@ The `run_analysis.R` file is appropriately commented and follows the logicial st
 More Information
 ----------------
 
-
 Details on the layout and structure of the raw data can be found in the `Readme.txt` file within the downloaded UCI dataset folder.
 
+The merged data set is 10299 observations by 561 variables (563 when you include the subject and activity variables). The variables also appear to be normalized and bounded within [-1,1].
+
+After the means and measurements are extracted, we are left with a 10299 * 66 dataframe.
+
+The descriptive activity names are then set using the labels defined in `activity_labels.txt` and prepended to the data frame along with subject data. This forms a 10299 * 68 dataframe.
+
+After calculating the mean for each measurement. The final data table (which is 180 * 68) is written out to file.

@@ -56,7 +56,7 @@ merged.clean <- cbind(sub.data,new.y,new.x)
 write.table(merged.clean, "clean_dataset.txt")
 
 ## Averaged clean data set.
-merged.avg <- ddply(merged.clean, .(subject, activity), function(x) colMeans(x[,1:60]))
+merged.avg <- ddply(merged.clean, .(subject, activity), function(x) colMeans(x[,3:68]))
 write.table(merged.avg, "averaged_dataset.txt")
 
 ## csv versions of the files
